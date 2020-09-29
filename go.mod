@@ -1,3 +1,3 @@
-module github.com/karalabe/usb
+module github.com/jcheyer/usb
 
 go 1.12
