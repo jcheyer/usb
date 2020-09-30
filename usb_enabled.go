@@ -96,3 +96,10 @@ func (info DeviceInfo) Open() (Device, error) {
 	}
 	return openRaw(info)
 }
+
+func OpenHidByPath(path string) (Device, error) {
+	d := DeviceInfo{
+		Path: path,
+	}
+	return openHid(d)
+}
